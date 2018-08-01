@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.min.css"  media="screen,projection"/>
+	<script>
+		function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+			}
+
+		function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+			}
+	</script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style type="text/css">
+	body {
+    		font-family: "Lato", sans-serif;
+	}
+	.sidenav {
+    		height: 100%;
+    		width: 0;
+    		position: fixed;
+    		z-index: 1;
+    		top: 0;
+    		left: 0;
+    		background-color: #cfd8dc;
+    		overflow-x: hidden;
+    		transition: 0.5s;
+    		padding-top: 60px;		
+	}
+	.sidenav a {
+    		padding: 8px 8px 8px 32px;
+    		text-decoration: none;
+    		font-size: 25px;
+    		color: #000000;
+    		display: block;
+    		transition: 0.3s;
+	}
+	.sidenav a:hover {
+    		color: #f1f1f1;		
+	}
+	.sidenav .closebtn {
+    		position: absolute;
+    		top: 0;
+    		right: 25px;
+    		font-size: 36px;
+    		margin-left: 50px;
+	}
+	@media screen and (max-height: 450px) {
+  		.sidenav {padding-top: 15px;}
+  		.sidenav a {font-size: 18px;}
+	}	
+	</style>      
+    </head>
+
+    <body>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="#!" class="brand-logo black-text"><i class="material-icons black-text">today</i>Today</a></br>
+  		<a href="#!" class="brand-logo black-text"><i class="material-icons black-text">email</i>Inbox</a></br>
+		<a href="#!" class="brand-logo black-text"><i class="material-icons black-text">grade</i>Starred</a></br>
+		<a href="#!" class="brand-logo black-text"><i class="material-icons black-text">bookmark</i>Important</a></br>
+		<a href="#!" class="brand-logo black-text"><i class="material-icons black-text">drafts</i>Drafts</a></br>
+		<a href="#!" class="brand-logo black-text"><i class="material-icons black-text">send</i>Sent</a>
+	</div>
+      	<div class="col s12" style="background-color: #b0bec5;">
+		<span style="font-size:30px;cursor:pointer;margin-left:5px" onclick="openNav()">&#9776;</span>
+        		<a href="sass.html"><i class="material-icons" style="margin-left:88%;color:#000000;top=3px;">search</i></a>
+        		<a href="badges.html"><i class="material-icons" style="color:#000000;">view_module</i></a>
+        		<a href="collapsible.html"><i class="material-icons" style="color:#000000;">refresh</i></a>
+        		<a href="mobile.html"><i class="material-icons" style="color:#000000;">people</i></a>
+      	</div>		       
+    </body>
+  </html>
